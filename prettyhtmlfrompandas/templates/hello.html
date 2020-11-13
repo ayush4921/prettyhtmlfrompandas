@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>{{name}}</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="..\static\css\style.css">
+
+</head>
+<h1>{{name}}</h1>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+      <div class="header_wrap">
+        <div class="num_rows">
+		
+				<div class="form-group"> 	<!--		Show Numbers Of Rows 		-->
+			 		<select class  ="form-control" name="state" id="maxRows" style="width: 20%;>
+						 
+						 
+						 <option value="10">10</option>
+						 <option value="15">15</option>
+						 <option value="20">20</option>
+						 <option value="50">50</option>
+						 <option value="70">70</option>
+						 <option value="100">100</option>
+            <option value="5000">Show ALL Rows</option>
+						</select>
+			 		
+			  	</div>
+        </div>
+        <div class="tb_search">
+<input type="text" id="search_input_all" onkeyup="FilterkeyWord_all_table()" placeholder="Search.." class="form-control" style="width: 20%;">
+<br>
+        </div>
+      </div>
+  
+{% for table in tables %}
+  {{titles[loop.index]}}
+  {{ table|safe }}
+{% endfor %}
+
+
+
+
+<style>
+	.alert {
+	  padding: 20px;
+	  background-color: #f44336;
+	  color: white;
+	  opacity: 1;
+	  transition: opacity 0.6s;
+	  margin-bottom: 15px;
+	}
+	
+	.alert.success {background-color: #4CAF50;}
+	.alert.info {background-color: #2196F3;}
+	.alert.warning {background-color: #ff9800;}
+	
+	.closebtn {
+	  margin-left: 15px;
+	  color: white;
+	  font-weight: bold;
+	  float: right;
+	  font-size: 22px;
+	  line-height: 20px;
+	  cursor: pointer;
+	  transition: 0.3s;
+	}
+	
+	.closebtn:hover {
+	  color: black;
+	}
+	</style>
+	</head>
+	<body>
+	
+	
+	
+	<script>
+	var close = document.getElementsByClassName("closebtn");
+	var i;
+	
+	for (i = 0; i < close.length; i++) {
+	  close[i].onclick = function(){
+		var div = this.parentElement;
+		div.style.opacity = "0";
+		setTimeout(function(){ div.style.display = "none"; }, 600);
+	  }
+	}
+	</script>
+
+<!--		Start Pagination -->
+			<div class='pagination-container'>
+				<nav>
+				  <ul class="pagination">
+				   <!--	Here the JS Function Will Add the Rows -->
+				  </ul>
+				</nav>
+			</div>
+	  <div class="rows_count">Showing 11 to 20 of 91 entries</div>
+	  <br>
+	  
+</div> <!-- 		End of Container -->
+
+
+
+<!--  Developed By Yasser Mas -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="..\static\js\script.js"></script>
+
+</body>
+</html>
+
+
