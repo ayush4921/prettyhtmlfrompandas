@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: prettyhtmlfrompandas
-Version: 0.0.1
+Version: 0.0.2
 Summary: Makes a beautiful html page with the pandas dataframe that you provide.
 Home-page: https://github.com/ayush4921/prettyhtmlfrompandas
 Author: Ayush Garg
 Author-email: themoviechannel77@gmail.com
 License: MIT
-Download-URL: https://github.com/ayush4921/prettyhtmlfrompandas/archive/0.0.1.tar.gz
+Download-URL: https://github.com/ayush4921/prettyhtmlfrompandas/archive/0.0.2.tar.gz
 Description: prettyhtmlfrompandas makes a beautiful html page with the pandas dataframe that you provide.
         ## Documentation
         

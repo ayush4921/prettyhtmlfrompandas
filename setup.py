@@ -6,13 +6,13 @@ long_description = f.read()
 setup(
   name = 'prettyhtmlfrompandas',         # How you named your package folder (MyLib)
   packages = ['prettyhtmlfrompandas'],   # Chose the same as "name"
-  version = '0.0.2',      # Start with a small number and increase it with every change you make
+  version = '0.0.3',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Makes a beautiful html page with the pandas dataframe that you provide.',   # Give a short description about your library
   author = 'Ayush Garg',                   # Type in your name
   author_email = 'themoviechannel77@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/ayush4921/prettyhtmlfrompandas',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/ayush4921/prettyhtmlfrompandas/archive/0.0.2.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/ayush4921/prettyhtmlfrompandas/archive/0.0.3.tar.gz',    # I explain this later on
   keywords = ['pandas','html','ui','pretty html','dataframes to html'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'pandas',

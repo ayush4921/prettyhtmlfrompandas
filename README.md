@@ -5,6 +5,7 @@ prettyhtmlfrompandas makes a beautiful html page with the pandas dataframe that 
 
 ```
 from prettyhtmlfrompandas import makehtml
+makehtml.makefiles()
 makehtml(df,name)
 ```
 Replace `df` with the variable that contains the pd.dataframe(...)
