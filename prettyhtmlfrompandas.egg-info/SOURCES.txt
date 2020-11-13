@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+prettyhtmlfrompandas/__init__.py
+prettyhtmlfrompandas/main_flask_server.py
+prettyhtmlfrompandas.egg-info/PKG-INFO
+prettyhtmlfrompandas.egg-info/SOURCES.txt
+prettyhtmlfrompandas.egg-info/dependency_links.txt
+prettyhtmlfrompandas.egg-info/requires.txt
+prettyhtmlfrompandas.egg-info/top_level.txt
+prettyhtmlfrompandas/static/css/style.css
+prettyhtmlfrompandas/static/css/style2.css
+prettyhtmlfrompandas/static/css/style3.css
+prettyhtmlfrompandas/static/js/script.js
+prettyhtmlfrompandas/templates/hello.html
